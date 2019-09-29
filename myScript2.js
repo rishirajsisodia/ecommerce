@@ -1,4 +1,4 @@
-var arr1 = JSON.parse(localStorage.getItem('Productlist'));
+// var arr1 = JSON.parse(localStorage.getItem('Productlist'));
 
 //AJAX CALL STARTS
 function missionBackend(){
@@ -63,11 +63,13 @@ brand.appendChild(brand1);
 
 // Check if Cart has Value else reset
 var myStorage = window.localStorage;
-if(!myStorage){
-var val=myStorage.setItem('cart-count',0)
-myStorage.setItem('Productlist',"[]")
+var checkpro=localStorage.getItem('Productlist');
+if(checkpro==null || checkpro==""){
+var val=myStorage.setItem('cart-count',0);
+myStorage.setItem('Productlist',"[]");
 }
 //Resetter Ends
+ var arr1 = JSON.parse(localStorage.getItem('Productlist'));
 
 document.getElementById('count').innerHTML=myStorage.getItem('cart-count');
 var valu=parseInt(localStorage["cart-count"]);
