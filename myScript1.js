@@ -1,6 +1,7 @@
 //Check if Local storage has Value or not
 var myStorage = window.localStorage;
-if(myStorage==null || myStorage=="" || myStorage==NaN){
+var checker=window.localStorage.getItem('cart-count');
+if(checker==null || checker==""){
 var val=myStorage.setItem('cart-count',0)
 }
 //Local Storage ends
