@@ -138,3 +138,10 @@ transition:1s;
 text-decoration:none;
 color:black;
 }
+
+@media Screen and (max-width:700px)
+{
+    #menuset{
+        display:none;
+    }
+}
