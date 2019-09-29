@@ -142,3 +142,10 @@ right:0;
 width:125px;
 z-index: 10000;
 }
+
+@media Screen and (max-width:700px)
+{
+    #menuset{
+        display:none;
+    }
+}
